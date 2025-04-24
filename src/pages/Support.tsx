@@ -9,7 +9,8 @@ import {
   Headphones, 
   Mail, 
   Phone, 
-  User 
+  User ,
+  XCircle
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Navbar from '@/components/Navbar';
@@ -64,7 +65,8 @@ const Support = () => {
   const formTitleRef = useScrollAnimation<HTMLHeadingElement>();
   const formRef = useScrollAnimation<HTMLFormElement>({ threshold: 0.1 });
   const thankYouRef = useScrollAnimation<HTMLDivElement>();
-
+  const errorRef = useScrollAnimation<HTMLDivElement>();
+  
   // Background animation ref
   const bgPatternRef = useRef<HTMLDivElement>(null);
   
@@ -84,7 +86,7 @@ const Support = () => {
     console.log(import.meta.env.VITE_BASE_URL);
   },[])
   
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState("none");
   const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -112,7 +114,7 @@ const Support = () => {
       });
 
       if(res.status==200){
-        setSubmitted(true);
+        setSubmitted("success");
         toast({
           title: "Support Request Sent",
           description: "We'll get back to you within 24 hours.",
@@ -120,11 +122,11 @@ const Support = () => {
       }
     }
     catch(e){ 
-      setSubmitted(false);
       toast({
         title: "Couldn't send support request",
         description: "Please Try After Some Time",
       });
+      setSubmitted("error");
     }
   };
 
@@ -277,7 +279,7 @@ const Support = () => {
       </section>
 
       {/* CONTACT FORM LAST */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 bg-gray-50 relative">
         <div className="container max-w-3xl mx-auto px-4 md:px-6 relative z-10">
           <h2 
             ref={formTitleRef}
@@ -285,9 +287,10 @@ const Support = () => {
           >
             Get in Touch
           </h2>
-          {!submitted ? (
+          {submitted=="none" && (
             <form 
-              ref={formRef}
+              key={`contact-form-${submitted}`}       
+             ref={formRef}
               onSubmit={handleSubmit} 
               className="space-y-6 bg-white p-8 rounded-xl shadow-md fade-in-up stagger-delay-1 hover-pop"
             >
@@ -373,7 +376,9 @@ const Support = () => {
                 Send Message
               </Button>
             </form>
-          ) : (
+          ) }
+          
+          {submitted == "success" && (
             <div 
               ref={thankYouRef}
               className="bg-green-50 border border-green-200 rounded-xl p-8 text-center fade-in scale-in"
@@ -385,13 +390,34 @@ const Support = () => {
               <p className="text-gray-600 mb-6">
                 We've received your message and will get back to you within 24 hours.
               </p>
-              <Button onClick={() => setSubmitted(false)} variant="outline">
+              <Button onClick={() => setSubmitted("none")} variant="outline">
                 Send Another Message
               </Button>
             </div>
+            
           )}
-        </div>
         
+
+          {submitted == "error" && (
+             <div
+            ref={errorRef}
+             className="bg-red-50 border border-red-200 rounded-xl p-8 text-center">
+             <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+               <XCircle size={32} className="text-red-500" />
+             </div>
+             <h3 className="text-xl font-semibold mb-2">Oops! Something went wrong</h3>
+             <p className="text-gray-600 mb-6">
+               We couldn't process your request. Please try again later.
+             </p>
+             <Button onClick={() =>{
+              setSubmitted("none")
+             
+            }} variant="outline">
+               Try Again
+             </Button>
+           </div>
+          )}
+          </div>
         {/* Subtle bubble background */}
         <div className="absolute inset-0 opacity-5">
           <BubbleBackground density="low" variant="purple" />
