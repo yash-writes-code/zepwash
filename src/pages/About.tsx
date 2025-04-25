@@ -139,9 +139,7 @@ const About = () => {
               <Link to="/services">
                 <Button className="btn-primary">Our Services</Button>
               </Link>
-              <Link to="/signup">
-                <Button variant="outline">Join Us</Button>
-              </Link>
+              
             </div>
           </div>
         </div>

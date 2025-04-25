@@ -86,7 +86,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white backdrop-blur-md rounded-3xl shadow-lg absolute left-4 right-4 top-[calc(100%+0.5rem)] p-4 z-50 animate-in fade-in slide-in-from-top-5 duration-300 border border-gray-100">
+        <div className="md:hidden bg-white backdrop-blur-md rounded-3xl shadow-lg absolute left-4 right-4 top-[calc(100%+0.5rem)] p-4 z-50 transition-all duration-300 ease-in-out opacity-100">
+
             <div className="flex flex-col space-y-5">
               <MobileNavLink to="/" onClick={toggleMenu}>Home</MobileNavLink>
               <MobileNavLink to="/services" onClick={toggleMenu}>Services</MobileNavLink>

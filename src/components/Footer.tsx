@@ -74,11 +74,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400">
                 <Phone size={16} />
-                <span>+91 98765 43210</span>
+                <a href='tel:+917570033209'>+91 75700 33209</a>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Mail size={16} />
-                <span>support@zepwash.com</span>
+                <a href='mailto:zepwashofficial@gmail.com'>zepwashofficial@gmail.com</a>
               </li>
               <li className="pt-4">
                 <Link to="/support" className="inline-block btn-primary">
@@ -91,10 +91,10 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">© 2025 ZepWash. All rights reserved.</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          {/* <div className="flex space-x-4 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 text-sm hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-gray-500 text-sm hover:text-white transition-colors">Terms of Service</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

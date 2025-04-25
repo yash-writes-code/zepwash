@@ -9,8 +9,7 @@ import {
   Headphones,
   Mail,
   Phone,
-  User,
-  XCircle,
+  User
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
@@ -209,7 +208,7 @@ const Support = () => {
                 Can't find what you're looking for?
               </p>
               <Button className="btn-primary animate-pulse-slow">
-                <span className="p-4 font-semibold"> Contact Us </span>
+                <a className="p-4 font-semibold" href="#contact_form"> Contact Us </a>
               </Button>
             </div>
           </div>
@@ -241,10 +240,10 @@ const Support = () => {
               <h3 className="font-semibold mb-1">Phone Support</h3>
               <p className="text-gray-600 text-sm mb-3">Mon-Sat, 9am to 6pm</p>
               <a
-                href="tel:+919876543210"
+                href="tel:+917570033209"
                 className="text-zep-blue-500 font-medium"
               >
-                +91 98765 43210
+                +91 75700 33209
               </a>
             </div>
             <div
@@ -256,12 +255,7 @@ const Support = () => {
               </div>
               <h3 className="font-semibold mb-1">Email Support</h3>
               <p className="text-gray-600 text-sm mb-3">24/7 email support</p>
-              <a
-                href="mailto:support@zepwash.com"
-                className="text-zep-blue-500 font-medium"
-              >
-                support@zepwash.com
-              </a>
+              <a href='mailto:zepwashofficial@gmail.com'>zepwashofficial@gmail.com</a>
             </div>
           </div>
           <div
@@ -278,11 +272,11 @@ const Support = () => {
                   For faster support, subscribers can use the support section in
                   their dashboard or the ZepWash app.
                 </p>
-                <Link to="/login">
+                {/* <Link to="/login">
                   <Button variant="outline" className="text-sm">
                     Login to Dashboard
                   </Button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -300,9 +294,9 @@ const Support = () => {
                   In case of any immediate service issues, please contact your
                   dedicated tower team directly through the app.
                 </p>
-                <Button variant="outline" className="text-sm">
+                {/* <Button variant="outline" className="text-sm">
                   <span>Download App</span>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -317,7 +311,7 @@ const Support = () => {
       {/* CONTACT FORM LAST */}
       <section className="py-16 bg-gray-50 relative overflow-hidden">
         <div className="container max-w-3xl mx-auto px-4 md:px-6 relative z-10">
-          <h2 ref={formTitleRef} className="text-2xl font-bold mb-6 fade-in-up">
+          <h2 ref={formTitleRef} className="text-2xl font-bold mb-6 fade-in-up" id="contact_form">
             Get in Touch
           </h2>
 
