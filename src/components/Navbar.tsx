@@ -110,8 +110,8 @@ const Navbar = () => {
       {/* Half-width Mobile Navigation - Slides from right */}
       <div
         className={`
-          md:hidden fixed top-0 right-0 bottom-0 w-[60%] bg-white z-50
-          shadow-[-10px_0_30px_rgba(0,0,0,0.1)]
+          md:hidden fixed top-0 right-0 bottom-0 w-[55%] bg-white z-50
+          shadow-[-10px_0_30px_rgba(0,0,0,0.1)] rounded-sm
           transition-all duration-300 ease-in-out
           ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
         `}
