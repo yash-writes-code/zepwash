@@ -18,7 +18,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/zepwash?igsh=bDZzYWZ3NzB0ZWUy" target='_blank' className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -73,7 +73,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Mail size={16} />
-                <a href='mailto:zepwashofficial@gmail.com'>zepwashofficial@gmail.com</a>
+                <a href='mailto:contact@zepwash.com'>contact@zepwash.com</a>
               </li>
               <li className="pt-4">
                 <Link to="/support" className="inline-block btn-primary">

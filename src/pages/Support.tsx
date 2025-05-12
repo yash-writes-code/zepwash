@@ -255,7 +255,7 @@ const Support = () => {
               </div>
               <h3 className="font-semibold mb-1">Email Support</h3>
               <p className="text-gray-600 text-sm mb-3">24/7 email support</p>
-              <a href='mailto:zepwashofficial@gmail.com'>zepwashofficial@gmail.com</a>
+              <a href='mailto:contact@zepwash.com'>contact@zepwash.com</a>
             </div>
           </div>
           <div
