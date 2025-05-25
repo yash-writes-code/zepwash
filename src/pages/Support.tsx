@@ -25,11 +25,7 @@ const faqItems = [
     answer:
       "You can subscribe to our services by downloading our mobile app from the App Store or Google Play. After registration, you can choose from our different subscription plans and make the payment through the app.",
   },
-  {
-    question: "What if I need to miss a scheduled wash?",
-    answer:
-      "You can easily reschedule or cancel a wash through our app at least 6 hours before the scheduled time without any penalty. For last-minute cancellations, please contact our support team.",
-  },
+
   {
     question: "How do your water-efficient washes work?",
     answer:
@@ -182,7 +178,7 @@ const Support = () => {
       </div>
 
       {/* FAQ FIRST */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 bg-gray-50 relative overflow-hidden" id="faq">
         <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center mb-12">
             <h2
@@ -309,7 +305,7 @@ const Support = () => {
       </section>
 
       {/* CONTACT FORM LAST */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 bg-gray-50 relative overflow-hidden" id="contact">
         <div className="container max-w-3xl mx-auto px-4 md:px-6 relative z-10">
           <h2 ref={formTitleRef} className="text-2xl font-bold mb-6 fade-in-up" id="contact_form">
             Get in Touch

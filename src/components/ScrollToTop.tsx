@@ -7,7 +7,9 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("call hogyaa");
+    
   }, [pathname]);
-
+  
   return null;
 }

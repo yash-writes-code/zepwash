@@ -25,8 +25,8 @@ const services = [
     features: [
       "Everything in Basic",
       "Window and glass cleaning",
-      "Dry and polish",
-      "Tire dressing"
+      "Seat and Dusting",
+      "Dashboard Dusting"
     ],
     gradient: "from-zep-blue-100 to-zep-green-100",
     iconBg: "bg-zep-green-100",
@@ -38,8 +38,8 @@ const services = [
     description: "All + Tyres + Interior Wipe",
     features: [
       "Everything in Premium",
-      "Interior vacuum",
-      "Dashboard and console wipe",
+      "Seat Cleaning",
+      "Boot Space Cleaning",
       "Interior freshener"
     ],
     gradient: "from-zep-green-100 to-zep-green-200",

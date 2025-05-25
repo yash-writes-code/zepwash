@@ -72,7 +72,7 @@ const Hero = () => {
               className="flex items-center fade-in-left stagger-delay-3"
             >
               <div className="bg-white/20 backdrop-blur-sm rounded-full py-2 px-6 border border-white/10 hover:bg-white/30 transition-all duration-300 cursor-pointer">
-                <p className="text-white text-sm font-medium">Join 500+ Happy Car Owners</p>
+                <p className="text-white text-sm font-medium">Join 100+ Happy Car Owners</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const Hero = () => {
                   <div className="flex justify-between items-center mb-6">
                     <div>
                       <h3 className="font-bold text-zep-blue-800">ZepWash</h3>
-                      <p className="text-xs text-zep-blue-600">Hello, Alex!</p>
+                      <p className="text-xs text-zep-blue-600">Hello, Naman!</p>
                     </div>
                     <div className="h-8 w-8 rounded-full bg-zep-blue-500 flex items-center justify-center">
                       <Smartphone className="text-white" size={16} />
