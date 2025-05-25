@@ -4,24 +4,24 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: "Raj Sharma",
-    position: "Basic Plan User",
+    position: "Premium Plan User",
     image: "/assets/raj.jpg",
     stars: 5,
-    quote: "ZepWash has completely changed how I take care of my car. Their service is prompt, thorough, and the staff is so professional. I love that they use eco-friendly products!"
+    quote: "ZepWash has been a gamechanger. Their service is prompt, satisfactory and on time. I love that they use eco-friendly products!"
   },
   {
     name: "Rahul Kapoor",
-    position: "Premium Subscriber",
-    image: "/assets/rahul.jpg",
+    position: "Basic Plan User",
+    image: "/assets/raghav.jpg",
     stars: 5,
-    quote: "As someone who's always busy, having ZepWash come to my apartment complex is incredibly convenient. The premium package keeps my car looking like new every week."
+    quote: "I'm impressed! My car looks great without spending too much and I feel good about the environmental impact."
   },
   {
     name: "Raghav Gupta",
     position: "Basic Plan User",
-    image: "/assets/raghav.jpg",
+    image: "/assets/rahul.jpg",
     stars: 4,
-    quote: "I was skeptical at first about how well a water-efficient wash would clean, but I'm thoroughly impressed! My car looks great, and I feel good about the environmental impact."
+    quote: "As someone who does not want to invest huge time in taking care of my car, zepwash just gets it done."
   }
 ];
 
