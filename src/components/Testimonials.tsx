@@ -7,21 +7,21 @@ const testimonials = [
     position: "Premium Plan User",
     image: "/assets/raj.jpg",
     stars: 5,
-    quote: "ZepWash has been a gamechanger. Their service is prompt, satisfactory and on time. I love that they use eco-friendly products!"
+    quote: "ZepWash guys are too good. They come on time, clean the car nicely, and even use eco-friendly stuff. Really happy with the service!"
   },
   {
     name: "Rahul Kapoor",
     position: "Basic Plan User",
     image: "/assets/raghav.jpg",
     stars: 5,
-    quote: "I'm impressed! My car looks great without spending too much and I feel good about the environmental impact."
+    quote: "To be honest, I didn't expect my car to look this clean. And the best part—it didn't even cost much. Totally worth it!"
   },
   {
     name: "Raghav Gupta",
     position: "Basic Plan User",
     image: "/assets/rahul.jpg",
     stars: 4,
-    quote: "As someone who does not want to invest huge time in taking care of my car, zepwash just gets it done."
+    quote: "I hardly get time to care for my car, but ZepWash takes care of it like their own. No stress at all!"
   }
 ];
 
