@@ -14,7 +14,7 @@ const testimonials = [
     position: "Basic Plan User",
     image: "/assets/raghav.jpg",
     stars: 5,
-    quote: "To be honest, I didn't expect my car to look this clean. And the best part—it didn't even cost much. Totally worth it!"
+    quote: "To be honest, I didn't expect my car to look this clean. And the best part — it didn't even cost much. Totally worth it!"
   },
   {
     name: "Raghav Gupta",
