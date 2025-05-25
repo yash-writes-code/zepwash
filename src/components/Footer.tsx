@@ -29,6 +29,9 @@ const Footer = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } 
+    else if(isSamePath && !isSameHash){
+      window.scrollTo({top:0,behavior:"smooth"});
+    }
   };
 
   return (
@@ -63,16 +66,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/"  className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/")}}>Home</Link>
+                <Link to="/"  className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/")}}>Home</Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/services")}}>Services</Link>
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/services")}}>Services</Link>
               </li>
               <li>
-                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/support")}}>Support</Link>
+                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/support")}}>Support</Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/about")}}>About Us</Link>
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/about")}}>About Us</Link>
               </li>
             </ul>
           </div>
@@ -81,13 +84,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/support")}}>Help Center</Link>
+                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/support")}}>Help Center</Link>
               </li>
               <li>
-                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/support#contact")}}>Contact Support</Link>
+                <Link to="/support" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/support#contact")}}>Contact Support</Link>
               </li>
               <li>
-                <Link to="/support#faq" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick(e,"/support#faq")}}>FAQ</Link>
+                <Link to="/support#faq" className="text-gray-400 hover:text-white transition-colors" onClick={(e)=>{handleClick("/support#faq")}}>FAQ</Link>
               </li>
            
             </ul>
