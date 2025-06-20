@@ -71,7 +71,7 @@ const Services = () => {
           ref={descRef}
           className="text-gray-600 max-w-2xl mx-auto fade-in-up stagger-delay-1"
         >
-          Subscription-based services available via our app. Select the perfect cleaning package for your vehicle.
+          Explore subscription-based car care on our app. Choose the perfect plan tailored to your vehicle's needs.
         </p>
       </div>
 
@@ -130,7 +130,7 @@ const Services = () => {
                 ))}
               </ul>
               
-              <div className="pt-2">
+              {/* <div className="pt-2">
                
                   <Button 
                     variant="outline" 
@@ -143,7 +143,7 @@ const Services = () => {
                     />
                   </Button>
                
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

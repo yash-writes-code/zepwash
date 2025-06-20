@@ -13,26 +13,26 @@ const AppDownload = () => {
           <div className="space-y-6 w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold">Download Our App</h2>
             <p className="text-white/90">
-              Get the full ZepWash experience on your mobile device. Subscribe to plans, schedule washes, and manage your account - all from one convenient app.
+            Get the full ZepWash experience on your phone — explore plans, subscribe, and manage your daily car care with just a few taps
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                   <span className="font-bold">1</span>
                 </div>
-                <span>Download the app from your preferred store</span>
+                <span>Download the ZepWash app</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                   <span className="font-bold">2</span>
                 </div>
-                <span>Create an account and select your service plan</span>
+                <span>Sign up and choose your subscription plan</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                   <span className="font-bold">3</span>
                 </div>
-                <span>Schedule your washes and enjoy the premium service</span>
+                <span>Sit back and enjoy premium car care</span>
               </div>
             </div>
           </div>

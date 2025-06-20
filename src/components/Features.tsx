@@ -4,7 +4,7 @@ import { Droplets, ShieldCheck, Users, AreaChart } from 'lucide-react';
 const features = [
   {
     icon: <Droplets size={36} className="text-zep-blue-500" />,
-    title: "100% Water Efficient",
+    title: "Water Efficient",
     description: "Our unique cleaning process uses 95% less water than traditional methods while delivering superior results."
   },
   {

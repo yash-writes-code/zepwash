@@ -5,7 +5,7 @@ import AppCta from './ui/HowItWorks/AppCta';
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-white to-blue-50">
+    <section className="pt-20 md:pt-28 bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto px-4 max-w-7xl">
         <HowHeader />
 
@@ -31,7 +31,7 @@ const HowItWorks = () => {
               </svg>
             }
             title="Book via App"
-            description="Download our app and schedule a car wash at your preferred time and location."
+            description="Get started on the ZepWash app — choose a plan and leave the rest to us."
           />
 
           <ProcessStepDesktop
@@ -52,7 +52,7 @@ const HowItWorks = () => {
               </svg>
             }
             title="Professional Wash"
-            description="Our trained team arrives with all equipment and premium cleaning solutions."
+            description="Professionally delivered care with top-grade equipment — every day, without reminders."
           />
 
           <ProcessStepDesktop
@@ -73,7 +73,7 @@ const HowItWorks = () => {
               </svg>
             }
             title="Rate & Review"
-            description="Share your feedback and satisfaction level to help us improve our service."
+            description="Rate your wash. We're always improving for you."
           />
         </div>
 
