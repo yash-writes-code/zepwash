@@ -4,12 +4,15 @@ import { Button } from '@/components/ui/button';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { useEffect, useRef } from 'react';
 
+
+
 const Hero = () => {
   const headingRef = useScrollAnimation();
   const descriptionRef = useScrollAnimation();
   const buttonsRef = useScrollAnimation();
   const statsRef = useScrollAnimation();
   const phoneRef = useScrollAnimation();
+ 
 
   // Parallax effect for background elements
   const bgPatternRef = useRef<HTMLDivElement>(null);

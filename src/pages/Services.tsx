@@ -1,9 +1,10 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Services from '@/components/Services';
+
 import Process from '@/components/Process';
 import CtaSection from '@/components/CtaSection';
+import Services2 from '@/components/Services2';
 
 const ServicesPage = () => {
   return (
@@ -19,7 +20,7 @@ const ServicesPage = () => {
         </div>
       </div>
       
-      <Services />
+      <Services2 />
       {/* <Process /> */}
       <CtaSection />
       

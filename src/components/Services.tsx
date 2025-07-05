@@ -7,12 +7,13 @@ const services = [
   {
     icon: <Droplets size={40} className="text-zep-blue-500" />,
     title: "Basic",
-    description: "Foam Exterior Wash",
+    description: "Essential Exterior Cleaning",
     features: [
-      "Premium foam wash",
-      "External surface cleaning",
-      "Water-saving technology",
-      "Quick 15-minute service"
+      "Premium foam wash (Every Third Day)",
+      "Daily surface dust wipe-off",
+      "Side mirrors, windshield & windows cleaning",
+      "Number plate cleaning",
+      "Tyre & rim deep cleaning"
     ],
     gradient: "from-zep-blue-100 to-zep-blue-200",
     iconBg: "bg-zep-blue-100",
@@ -21,12 +22,13 @@ const services = [
   {
     icon: <SprayCan size={40} className="text-zep-blue-500" />,
     title: "Premium",
-    description: "Foam + Dry + Glass",
+    description: "Exterior + Weekly Interior Touch",
     features: [
-      "Everything in Basic",
-      "Window and glass cleaning",
-      "Seat Dusting",
-      "Dashboard Cleaning"
+      "All Basic features",
+      "Premium foam wash (Alternate Day)",
+      "Weekly dashboard & panel dusting",
+      "Weekly seat surface & glove compartment cleaning",
+      "Weekly cup & key holder cleaning"
     ],
     gradient: "from-zep-blue-100 to-zep-green-100",
     iconBg: "bg-zep-green-100",
@@ -35,12 +37,13 @@ const services = [
   {
     icon: <Car size={40} className="text-zep-blue-500" />,
     title: "Supreme",
-    description: "All + Tyres + Interior Wipe",
+    description: "Full Interior + Exterior Package",
     features: [
-      "Everything in Premium",
-      "Door and Mat Cleaning",
-      "Boot Space Cleaning",
-      "Interior freshener"
+      "All Premium features",
+      "Interior vacuuming Weekly",
+      "Deep foot mat cleaning Weekly",
+      "Boot/trunk space cleaning Weekly",
+      "Interior fragrance Weekly"
     ],
     gradient: "from-zep-green-100 to-zep-green-200",
     iconBg: "bg-zep-green-100",
